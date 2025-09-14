@@ -25,7 +25,7 @@ module.exports = {
       let ownerConf = {};
       try { ownerConf = require(cfgPath); } catch (e) {}
       const ownerId = ownerConf.OWNER_ID || ownerConf.owner || "Unknown";
-      const ownerUsername = ownerConf.OWNER_USERNAME || "emonhowlader";
+      const ownerUsername = ownerConf.OWNER_USERNAME || "EMONHOWLADER";
       const botName = ownerConf.BOT_NAME || "EMon-BHai-Bot";
 
       // Load plugins
