@@ -30,7 +30,7 @@ module.exports = {
 
         const replyMarkup = {
           inline_keyboard: [
-            [{ text: 'Bot Owner', url: 'https://t.me/MOHAMMADNAYAN' }],
+            [{ text: 'Bot Owner', url: 'https://t.me/EMONHAWLADAR' }],
             [{ text: 'Download', url: high }],
           ],
         };
