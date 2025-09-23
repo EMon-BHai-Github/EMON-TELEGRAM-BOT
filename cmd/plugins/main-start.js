@@ -19,7 +19,7 @@ module.exports = {
       const user = msg.from;
 
       const botName = "EMon-BHai-Bot";
-      const bannerImg = "https://i.postimg.cc/5ycrKgKw/78fa584d9b11d33eb8155cbbcb98c96e.jpg";
+      const bannerImg = "https://i.postimg.cc/bwZ9cmfG/Photoroom-20250923-095344084.png";
 
       // Welcome caption with VIP hacker-style
       const caption = `<b>🛡️ Welcome to ${botName} 🛡️</b>\n\n` +
