@@ -6,7 +6,7 @@ const { alldown } = require('nayan-media-downloaders');
 module.exports = {
   config: {
     name: "mp3",
-    credits: "Nayan",
+    credits: "Emon",
     prefix: true,
     aliases: ["audio"],
     permission: 0,
@@ -20,6 +20,12 @@ module.exports = {
     const msg = event.msg;
     const url = event.body;
 
+    // Ensure "Emon" folder exists
+    const emonDir = path.join(__dirname, "Emon");
+    if (!fs.existsSync(emonDir)) {
+      fs.mkdirSync(emonDir, { recursive: true });
+    }
+
     // Display waiting message
     const waitingMsg = await api.sendMessage(chatId, "⏳ Please wait while your request is being processed...");
 
@@ -32,9 +38,8 @@ module.exports = {
         const fileUrl = `https://api.telegram.org/file/bot${global.config.telegramBotToken}/${file.file_path}`;
 
         const mp3Path = path.join(
-          __dirname,
-          'Nayan',
-          `Nayan_${Date.now()}.mp3`
+          emonDir,
+          `Emon_${Date.now()}.mp3`
         );
 
         const response = await fetch(fileUrl);
@@ -62,9 +67,8 @@ module.exports = {
         if (data.status && data.data && data.data.audio) {
           const audioUrl = data.data.audio;
           const mp3Path = path.join(
-            __dirname,
-            'Nayan',
-            `Nayan_${Date.now()}.mp3`
+            emonDir,
+            `Emon_${Date.now()}.mp3`
           );
 
           const response = await fetch(audioUrl);
