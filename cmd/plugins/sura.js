@@ -33,8 +33,8 @@ module.exports = {
 
     // Full 1-114 list (Bangla + English). Two audio links prefilled per user's input.
     const surahList = [
-      { num: 1, name: "সূরা আল-ফাতিহা (Al-Fatiha)", audio: "https://drive.google.com/uc?export=download&id=1_ihR2-Jn_-dylClCwNCsNbvm8vf64t3a" },
-      { num: 2, name: "সূরা আল-বাকারাহ (Al-Baqarah)", audio: "https://drive.google.com/uc?export=download&id=1_iL-iz5KPegCxRRLhujSyJjrtW_wsQSg" },
+      { num: 1, name: "সূরা আল-ফাতিহা (Al-Fatiha)", audio: "https://files.catbox.moe/0csu7d.m4a" },
+      { num: 2, name: "সূরা আল-বাকারাহ (Al-Baqarah)", audio: "https://files.catbox.moe/96glnv.m4a" },
       { num: 3, name: "সূরা আলে-ইমরান (Aal-E-Imran)", audio: "PUT_YOUR_AUDIO_LINK" },
       { num: 4, name: "সূরা আন-নিসা (An-Nisa)", audio: "PUT_YOUR_AUDIO_LINK" },
       { num: 5, name: "সূরা আল-মায়িদাহ (Al-Maidah)", audio: "PUT_YOUR_AUDIO_LINK" },
